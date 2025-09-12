@@ -2,7 +2,7 @@ package GeeksForGeeks.String;
 
 import java.util.HashSet;
 
-public class FirstRepeatedCharacter {
+public class FirstRepeatedConsecutiveCharacter {
     public static String firstRepChar(String s) {
         // code here
         HashSet<Character> set = new HashSet<>();
