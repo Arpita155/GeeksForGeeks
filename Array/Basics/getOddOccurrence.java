@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Prac1 {
+public class OddOccurrence {
 
     public static int getOddOccurrence(int[] arr) {
         // code here
