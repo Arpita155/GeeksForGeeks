@@ -2,6 +2,8 @@ package GeeksForGeeks.Arrays.Basics;
 
 import java.util.Arrays;
 
+// Q. Given an array arr of even size consisting of positive integers. After sorting the array,
+// find the sum of the product of i-th element from starting and i-th element from last.
 public class SumOfAlternativeProductAfterSorting {
 
     public static int altProduct(int[] arr) {
