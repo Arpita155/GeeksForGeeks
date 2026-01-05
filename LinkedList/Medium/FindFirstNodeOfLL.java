@@ -11,6 +11,7 @@ public class FindFirstNodeOfLL {
             slow = slow.next;
             fast = fast.next.next;
 
+
             if(slow == fast) {
                 while(b!=slow){
                     b=b.next;
