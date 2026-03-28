@@ -1,12 +1,12 @@
-package GeeksForGeeks.Recursion;
+package GeeksForGeeks.Recursion.Medium;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Medium {
+public class CombinationSum2 {
 
-    public static List<List<Integer>> combinationSum2(int[] a, int s) {
+    public static List<List<Integer>> combinationsum2(int[] a, int s) {
 
         List<List<Integer>> list = new ArrayList<>();
         Arrays.sort(a);
@@ -31,6 +31,6 @@ public class Medium {
     public static void main(String[] args) {
         int[] candidates = {10,1,2,7,6,1,5};
         int target = 8;
-        System.out.println(combinationSum2(candidates,target));   // [[1, 1, 6], [1, 2, 5], [1, 7], [2, 6]]
+        System.out.println(combinationsum2(candidates,target));   // [[1, 1, 6], [1, 2, 5], [1, 7], [2, 6]]
     }
 }
