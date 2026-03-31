@@ -8,10 +8,10 @@ public class TwoStacksInAnArray {
     private int s;
     private int l;
 
-    TwoStacksInAnArray(){
-        this.arr = new int[100];
+    TwoStacksInAnArray(int c){
+        this.arr = new int[c];
         s = -1;
-        l = 100;
+        l = arr.length;
     }
 
     public void push1(int x){
@@ -38,13 +38,13 @@ public class TwoStacksInAnArray {
     }
 
     public int pop2(){
-        if(l==100){
+        if(l==arr.length){
             return -1;
         }
         return arr[l++];
     }
     public static void main(String[] args) {
-        TwoStacksInAnArray obj = new TwoStacksInAnArray();
+        TwoStacksInAnArray obj = new TwoStacksInAnArray(7);
         obj.push1(2);
         obj.push1(3);
         obj.push2(4);
