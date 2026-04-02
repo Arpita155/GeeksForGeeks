@@ -1,0 +1,24 @@
+package GeeksForGeeks.BasicQustionsOnJava.Easy;
+
+public class ConsecutiveOnesNotAllowed {
+
+    public static int countStrings(int n) {
+        // code here
+        if (n == 1) return 2;
+
+        int a = 2; // f(1)
+        int b = 3; // f(2)
+
+        for (int i = 3; i <= n; i++) {
+            int c = a + b;
+            a = b;
+            b = c;
+        }
+
+        return b;
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Number of possibility is : "+countStrings(3));
+    }
+}
