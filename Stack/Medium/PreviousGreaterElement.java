@@ -5,7 +5,7 @@ import java.util.Stack;
 
 public class PreviousGreaterElement {
 
-    static ArrayList<Integer> preGreaterEle(int[] arr) {
+    public static ArrayList<Integer> preGreaterEle(int[] arr) {
         // code here
         ArrayList<Integer> al = new ArrayList<>();
         Stack<Integer> st = new Stack<>();
@@ -29,6 +29,7 @@ public class PreviousGreaterElement {
     }
 
     public static void main(String[] args) {
-
+        int[]arr = {1, 3, 2, 4};
+        System.out.println(preGreaterEle(arr));
     }
 }
