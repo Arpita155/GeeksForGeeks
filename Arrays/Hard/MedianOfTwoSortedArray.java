@@ -35,5 +35,10 @@ public class MedianOfTwoSortedArray {
         int []b = {10, 12, 14, 16, 18, 20};
 
         System.out.println(medianOf2(a,b));   // 11.0
+
+        int []a1 = {1,2,3};
+        int []b1 = {4,5};
+
+        System.out.println(medianOf2(a1,b1));   // 11.0
     }
 }
