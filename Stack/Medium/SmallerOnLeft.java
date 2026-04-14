@@ -1,6 +1,5 @@
 package GeeksForGeeks.Stack.Medium;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Stack;
 
@@ -29,9 +28,7 @@ public class SmallerOnLeft {
         int[]a = new int[arr.length];
         Stack<Integer> st = new Stack<>();
         int k = 0;
-        st.push(arr[0]);
-        a[k++]=-1;
-        for(int i=1;i<arr.length;i++){
+        for(int i=0;i<arr.length;i++){
             while(!st.isEmpty() && st.peek()>=arr[i]){
                 st.pop();
             }

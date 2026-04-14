@@ -29,7 +29,7 @@ public class PreviousGreaterElement {
     }
 
     public static void main(String[] args) {
-        int[]arr = {1, 3, 2, 4};
+        int[]arr = {1, 3, 8,5,2,9,4};
         System.out.println(preGreaterEle(arr));
     }
 }
