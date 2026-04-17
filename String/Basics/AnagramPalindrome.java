@@ -22,7 +22,7 @@ public class AnagramPalindrome {
     public static void main(String[] args) {
         String str = "geeksogeeks";    // true
 //        String str = "geeksforgeeks";    // false
-        
+
         System.out.println("Is the string anagram palindrome : "+canFormPalindrome(str));
     }
 }
