@@ -28,7 +28,9 @@ public class LongestValidParenthesis {
 
     public static void main(String[] args) {
         String str =  ")()())";  // 4
+        String str1 = "((())()(";  // 6
         System.out.println(maxLength(str));
+        System.out.println(maxLength(str1));
     }
 
 }
