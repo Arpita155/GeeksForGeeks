@@ -28,12 +28,12 @@ public class ReArrangeLL {
         head.next.next = new Node(30);
         head.next.next.next = new Node(40);
 
-        System.out.print("Before Rearranging : ");
+        System.out.print("Before Rearranging : ");   // Before Rearranging : 10 20 30 40
         Node.traversal(head);
 
         rearrangeEvenOdd(head);
 
-        System.out.print("\nAfter Rearranging : ");
+        System.out.print("\nAfter Rearranging : ");    // After Rearranging : 10 30 20 40
         Node.traversal(head);
 
     }
