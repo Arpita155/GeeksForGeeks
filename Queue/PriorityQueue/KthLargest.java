@@ -1,6 +1,7 @@
 package GeeksForGeeks.Queue.PriorityQueue;
 
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.PriorityQueue;
 
 public class KthLargest {
@@ -30,7 +31,7 @@ public class KthLargest {
 
     public static void main(String[] args) {
         int[]arr = {3, 5, 4, 2, 9};
-        int k = 3;
+        int k = 2;
         System.out.println("Kth largest element is : "+kthLargest(arr,k));
     }
 }
