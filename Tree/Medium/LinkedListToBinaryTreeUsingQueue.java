@@ -3,17 +3,17 @@ package GeeksForGeeks.Tree.Medium;
 import java.util.LinkedList;
 import java.util.Queue;
 
-class Node {
+class Nodee {
     int data;
-    Node next;
-    Node left, right;
+    Nodee next;
+    Nodee left, right;
 
-    Node(int x) {
+    Nodee(int x) {
         data = x;
         left = right = next = null;
     }
 
-    static void traversal(Node head) {
+    static void traversal(Nodee head) {
         // --------Recursive Traversal------------
         if(head == null){
             return;
@@ -24,27 +24,27 @@ class Node {
 }
 public class LinkedListToBinaryTreeUsingQueue {
 
-    public static Node linkedListToBinaryTree(Node head) {
+    public static Nodee linkedListToBinaryTree(Nodee head) {
         // code here
         if(head == null){
             return null;
         }
 
-        Queue<Node> q = new LinkedList<>();
-        Node root = new Node(head.data);
+        Queue<Nodee> q = new LinkedList<>();
+        Nodee root = new Nodee(head.data);
         q.add(root);
         head = head.next;
 
         while(head != null){
-            Node curr = q.poll();
+            Nodee curr = q.poll();
 
-            curr.left = new Node(head.data);
+            curr.left = new Nodee(head.data);
             q.add(curr.left);
             head = head.next;
 
             if(head==null) break;
 
-            curr.right = new Node(head.data);
+            curr.right = new Nodee(head.data);
             q.add(curr.right);
             head = head.next;
         }
@@ -54,11 +54,11 @@ public class LinkedListToBinaryTreeUsingQueue {
 
     public static void main(String[] args) {
 
-        Node head = new Node(10);
-        head.next=new Node(20);
-        head.next.next=new Node(30);
-        head.next.next.next=new Node(40);
-        head.next.next.next.next=new Node(50);
+        Nodee head = new Nodee(10);
+        head.next=new Nodee(20);
+        head.next.next=new Nodee(30);
+        head.next.next.next=new Nodee(40);
+        head.next.next.next.next=new Nodee(50);
 
     }
 }
